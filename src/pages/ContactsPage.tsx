@@ -25,8 +25,8 @@ const ContactsPage = () => {
                   <MapPin className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <h3 className="font-medium mb-1">Адрес</h3>
-                    <p className="text-muted-foreground">ул. Школьная, 1</p>
-                    <p className="text-muted-foreground">г. Москва, 123456</p>
+                    <p className="text-muted-foreground">420101, г. Казань</p>
+                    <p className="text-muted-foreground">Приволжский район, ул. Академика Завойского, д. 106</p>
                   </div>
                 </CardContent>
               </Card>
@@ -36,8 +36,8 @@ const ContactsPage = () => {
                   <Phone className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <h3 className="font-medium mb-1">Телефон</h3>
-                    <p className="text-muted-foreground">+7 (123) 456-78-90</p>
-                    <p className="text-muted-foreground">+7 (123) 456-78-91</p>
+                    <p className="text-muted-foreground">+7 (843) 277-77-77</p>
+                    <p className="text-muted-foreground">+7 (843) 277-77-78</p>
                   </div>
                 </CardContent>
               </Card>
@@ -47,8 +47,8 @@ const ContactsPage = () => {
                   <Mail className="h-6 w-6 text-primary shrink-0" />
                   <div>
                     <h3 className="font-medium mb-1">Email</h3>
-                    <p className="text-muted-foreground">info@school1.ru</p>
-                    <p className="text-muted-foreground">director@school1.ru</p>
+                    <p className="text-muted-foreground">licey83@edu.tatar.ru</p>
+                    <p className="text-muted-foreground">secretary@licey83.ru</p>
                   </div>
                 </CardContent>
               </Card>
@@ -68,7 +68,7 @@ const ContactsPage = () => {
             <div className="aspect-video bg-muted rounded-lg overflow-hidden">
               {/* Здесь может быть встроенная карта Google или Яндекс */}
               <div className="w-full h-full flex items-center justify-center bg-muted text-muted-foreground">
-                <p>Карта расположения школы</p>
+                <p>Карта расположения лицея</p>
               </div>
             </div>
           </div>
@@ -78,24 +78,36 @@ const ContactsPage = () => {
             <ContactForm />
             
             <div className="mt-8">
-              <h3 className="text-xl font-bold mb-4">Часто задаваемые вопросы</h3>
+              <h3 className="text-xl font-bold mb-4">Администрация лицея</h3>
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-medium">Как записать ребенка в первый класс?</h4>
+                  <h4 className="font-medium">Директор</h4>
                   <p className="text-muted-foreground">
-                    Для записи в первый класс необходимо подать заявление через портал Госуслуг или при личном посещении школы.
+                    Иванов Иван Иванович
+                  </p>
+                  <p className="text-muted-foreground">
+                    Телефон: +7 (843) 277-77-00
+                  </p>
+                  <p className="text-muted-foreground">
+                    Email: director@licey83.ru
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-medium">Какие документы нужны для поступления?</h4>
+                  <h4 className="font-medium">Заместитель директора по учебной работе</h4>
                   <p className="text-muted-foreground">
-                    Свидетельство о рождении ребенка, паспорт родителя, СНИЛС, медицинская карта, документ о регистрации.
+                    Петрова Елена Сергеевна
+                  </p>
+                  <p className="text-muted-foreground">
+                    Телефон: +7 (843) 277-77-01
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-medium">Есть ли у школы электронный дневник?</h4>
+                  <h4 className="font-medium">Заместитель директора по воспитательной работе</h4>
                   <p className="text-muted-foreground">
-                    Да, в нашей школе используется электронный дневник и журнал. Доступ предоставляется всем родителям.
+                    Смирнова Ольга Александровна
+                  </p>
+                  <p className="text-muted-foreground">
+                    Телефон: +7 (843) 277-77-02
                   </p>
                 </div>
               </div>

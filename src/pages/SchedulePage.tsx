@@ -30,33 +30,62 @@ const scheduleData = {
       { time: "12:40 - 13:25", subject: "Физкультура", teacher: "Васильев П.Р.", room: "Спортзал" }
     ]
   },
-  "6Б": {
+  "9Б": {
     monday: [
-      { time: "8:30 - 9:15", subject: "История", teacher: "Смирнов Д.И.", room: "301" },
-      { time: "9:25 - 10:10", subject: "Английский язык", teacher: "Козлова Е.А.", room: "208" },
-      { time: "10:30 - 11:15", subject: "Математика", teacher: "Иванова А.П.", room: "205" },
-      { time: "11:35 - 12:20", subject: "Русский язык", teacher: "Петрова С.В.", room: "210" },
-      { time: "12:40 - 13:25", subject: "Музыка", teacher: "Белова Т.С.", room: "109" }
+      { time: "8:30 - 9:15", subject: "Алгебра", teacher: "Соколова М.В.", room: "201" },
+      { time: "9:25 - 10:10", subject: "Физика", teacher: "Кузнецов В.А.", room: "303" },
+      { time: "10:30 - 11:15", subject: "Русский язык", teacher: "Антонова К.И.", room: "207" },
+      { time: "11:35 - 12:20", subject: "Химия", teacher: "Морозова Л.П.", room: "305" },
+      { time: "12:40 - 13:25", subject: "История", teacher: "Смирнов Д.И.", room: "301" },
+      { time: "13:35 - 14:20", subject: "Информатика", teacher: "Григорьев С.П.", room: "201" }
     ],
     tuesday: [
-      { time: "8:30 - 9:15", subject: "Математика", teacher: "Иванова А.П.", room: "205" },
-      { time: "9:25 - 10:10", subject: "География", teacher: "Федоров А.К.", room: "304" },
-      { time: "10:30 - 11:15", subject: "Литература", teacher: "Петрова С.В.", room: "210" },
-      { time: "11:35 - 12:20", subject: "Физкультура", teacher: "Васильев П.Р.", room: "Спортзал" },
-      { time: "12:40 - 13:25", subject: "Информатика", teacher: "Григорьев С.П.", room: "201" }
+      { time: "8:30 - 9:15", subject: "Геометрия", teacher: "Соколова М.В.", room: "201" },
+      { time: "9:25 - 10:10", subject: "Литература", teacher: "Антонова К.И.", room: "207" },
+      { time: "10:30 - 11:15", subject: "Английский язык", teacher: "Козлова Е.А.", room: "208" },
+      { time: "11:35 - 12:20", subject: "Биология", teacher: "Николаева И.С.", room: "302" },
+      { time: "12:40 - 13:25", subject: "География", teacher: "Федоров А.К.", room: "304" },
+      { time: "13:35 - 14:20", subject: "Физкультура", teacher: "Васильев П.Р.", room: "Спортзал" }
     ],
     wednesday: [
-      { time: "8:30 - 9:15", subject: "Физика", teacher: "Кузнецов В.А.", room: "303" },
-      { time: "9:25 - 10:10", subject: "Русский язык", teacher: "Петрова С.В.", room: "210" },
-      { time: "10:30 - 11:15", subject: "Математика", teacher: "Иванова А.П.", room: "205" },
-      { time: "11:35 - 12:20", subject: "Биология", teacher: "Николаева И.С.", room: "302" },
-      { time: "12:40 - 13:25", subject: "Английский язык", teacher: "Козлова Е.А.", room: "208" }
+      { time: "8:30 - 9:15", subject: "Русский язык", teacher: "Антонова К.И.", room: "207" },
+      { time: "9:25 - 10:10", subject: "Алгебра", teacher: "Соколова М.В.", room: "201" },
+      { time: "10:30 - 11:15", subject: "Физика", teacher: "Кузнецов В.А.", room: "303" },
+      { time: "11:35 - 12:20", subject: "Обществознание", teacher: "Смирнов Д.И.", room: "301" },
+      { time: "12:40 - 13:25", subject: "Информатика", teacher: "Григорьев С.П.", room: "201" },
+      { time: "13:35 - 14:20", subject: "ОБЖ", teacher: "Никитин А.А.", room: "102" }
+    ]
+  },
+  "11А": {
+    monday: [
+      { time: "8:30 - 9:15", subject: "Математика (проф.)", teacher: "Белов И.Г.", room: "203" },
+      { time: "9:25 - 10:10", subject: "Физика (проф.)", teacher: "Кузнецов В.А.", room: "303" },
+      { time: "10:30 - 11:15", subject: "Русский язык", teacher: "Воронцова Т.М.", room: "206" },
+      { time: "11:35 - 12:20", subject: "Информатика (проф.)", teacher: "Григорьев С.П.", room: "201" },
+      { time: "12:40 - 13:25", subject: "Английский язык", teacher: "Козлова Е.А.", room: "208" },
+      { time: "13:35 - 14:20", subject: "История", teacher: "Смирнов Д.И.", room: "301" }
+    ],
+    tuesday: [
+      { time: "8:30 - 9:15", subject: "Математика (проф.)", teacher: "Белов И.Г.", room: "203" },
+      { time: "9:25 - 10:10", subject: "Литература", teacher: "Воронцова Т.М.", room: "206" },
+      { time: "10:30 - 11:15", subject: "Физика (проф.)", teacher: "Кузнецов В.А.", room: "303" },
+      { time: "11:35 - 12:20", subject: "Астрономия", teacher: "Кузнецов В.А.", room: "303" },
+      { time: "12:40 - 13:25", subject: "Обществознание", teacher: "Смирнов Д.И.", room: "301" },
+      { time: "13:35 - 14:20", subject: "Физкультура", teacher: "Васильев П.Р.", room: "Спортзал" }
+    ],
+    wednesday: [
+      { time: "8:30 - 9:15", subject: "Русский язык", teacher: "Воронцова Т.М.", room: "206" },
+      { time: "9:25 - 10:10", subject: "Математика (проф.)", teacher: "Белов И.Г.", room: "203" },
+      { time: "10:30 - 11:15", subject: "Информатика (проф.)", teacher: "Григорьев С.П.", room: "201" },
+      { time: "11:35 - 12:20", subject: "Физика (проф.)", teacher: "Кузнецов В.А.", room: "303" },
+      { time: "12:40 - 13:25", subject: "Английский язык", teacher: "Козлова Е.А.", room: "208" },
+      { time: "13:35 - 14:20", subject: "Индивидуальный проект", teacher: "Морозова Л.П.", room: "305" }
     ]
   }
 };
 
 // Списки классов и дней недели
-const classes = ["5А", "6Б"];
+const classes = ["5А", "9Б", "11А"];
 const days = ["monday", "tuesday", "wednesday"];
 const dayNames = {
   monday: "Понедельник",
@@ -73,7 +102,7 @@ const SchedulePage = () => {
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-4xl font-bold mb-6">Расписание занятий</h1>
           <p className="text-lg text-muted-foreground max-w-3xl">
-            Актуальное расписание занятий для всех классов нашей школы.
+            Актуальное расписание занятий для всех классов нашего лицея.
           </p>
         </div>
       </div>

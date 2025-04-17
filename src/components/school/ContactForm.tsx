@@ -25,7 +25,7 @@ const ContactForm = () => {
       <CardHeader>
         <CardTitle>Связаться с нами</CardTitle>
         <CardDescription>
-          У вас есть вопросы? Отправьте нам сообщение, и мы свяжемся с вами.
+          Отправьте сообщение, и мы свяжемся с вами в ближайшее время.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -42,12 +42,16 @@ const ContactForm = () => {
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">Имя</Label>
-              <Input id="name" placeholder="Введите ваше имя" required />
+              <Label htmlFor="name">ФИО</Label>
+              <Input id="name" placeholder="Введите ваше ФИО" required />
             </div>
             <div className="space-y-2">
               <Label htmlFor="email">Email</Label>
               <Input id="email" type="email" placeholder="example@mail.ru" required />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="phone">Телефон</Label>
+              <Input id="phone" type="tel" placeholder="+7 (XXX) XXX-XX-XX" />
             </div>
             <div className="space-y-2">
               <Label htmlFor="message">Сообщение</Label>

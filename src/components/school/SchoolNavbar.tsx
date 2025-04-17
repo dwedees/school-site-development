@@ -7,6 +7,8 @@ import {
   Info, 
   Mail, 
   Menu, 
+  GraduationCap,
+  Users,
   X 
 } from "lucide-react";
 import { useState } from "react";
@@ -19,9 +21,11 @@ const SchoolNavbar = () => {
   
   const navLinks = [
     { path: "/", label: "Главная", icon: <Home className="mr-2 h-4 w-4" /> },
-    { path: "/about", label: "О школе", icon: <Info className="mr-2 h-4 w-4" /> },
+    { path: "/about", label: "О лицее", icon: <Info className="mr-2 h-4 w-4" /> },
+    { path: "/education", label: "Образование", icon: <GraduationCap className="mr-2 h-4 w-4" /> },
     { path: "/news", label: "Новости", icon: <BookOpen className="mr-2 h-4 w-4" /> },
     { path: "/schedule", label: "Расписание", icon: <Calendar className="mr-2 h-4 w-4" /> },
+    { path: "/parents", label: "Родителям", icon: <Users className="mr-2 h-4 w-4" /> },
     { path: "/contacts", label: "Контакты", icon: <Mail className="mr-2 h-4 w-4" /> },
   ];
 
@@ -31,8 +35,11 @@ const SchoolNavbar = () => {
     <nav className="bg-primary text-primary-foreground py-4 shadow-md">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <img src="/logo-b.svg" alt="Школьный логотип" className="h-10 w-10 mr-2" />
-          <span className="text-xl font-bold">Школа №1</span>
+          <img src="/logo-b.svg" alt="Логотип лицея" className="h-10 w-10 mr-2" />
+          <div className="flex flex-col">
+            <span className="text-md font-bold leading-tight">Лицей №83</span>
+            <span className="text-xs">Центр образования</span>
+          </div>
         </div>
         
         {/* Мобильная навигация */}
@@ -48,12 +55,13 @@ const SchoolNavbar = () => {
         </div>
         
         {/* Десктопная навигация */}
-        <div className="hidden md:flex space-x-2">
+        <div className="hidden md:flex space-x-1">
           {navLinks.map((link) => (
             <Button
               key={link.path}
               variant={isActive(link.path) ? "secondary" : "ghost"}
               asChild
+              size="sm"
             >
               <Link to={link.path} className="flex items-center">
                 {link.icon}
