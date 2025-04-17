@@ -1,7 +1,7 @@
 import SchoolLayout from "@/components/school/SchoolLayout";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { GraduationCap, BookOpen, Award, Flask, PenTool, Calculator } from "lucide-react";
+import { GraduationCap, BookOpen, Award, Beaker, PenTool, Calculator } from "lucide-react";
 
 const EducationPage = () => {
   return (
@@ -71,7 +71,7 @@ const EducationPage = () => {
                   </div>
                   <div className="p-4 border rounded-md">
                     <h4 className="font-medium mb-2 flex items-center">
-                      <Flask className="h-5 w-5 text-primary mr-2" />
+                      <Beaker className="h-5 w-5 text-primary mr-2" />
                       Естественно-научное
                     </h4>
                     <p className="text-sm text-muted-foreground">
