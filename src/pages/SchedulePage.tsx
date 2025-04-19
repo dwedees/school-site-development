@@ -560,7 +560,7 @@ const SchedulePage = () => {
                         <TableBody>
                           {currentSchedule[day].map((lesson, index) => (
                             <TableRow key={index}>
-                              <TableCell>{index + ?}</TableCell>
+                              <TableCell>{(index + 1).toString()}</TableCell>
                               <TableCell className="font-mono">{lesson.time}</TableCell>
                               <TableCell>{lesson.subject}</TableCell>
                               <TableCell className="text-right">{lesson.room}</TableCell>
