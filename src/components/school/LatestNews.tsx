@@ -2,29 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import NewsCard, { NewsItem } from "./NewsCard";
 
-const latestNews: NewsItem[] = [
-  {
-    id: 1,
-    title: "Региональный этап Всероссийской олимпиады школьников",
-    date: "15.02.2023",
-    description: "Ученики Лицея №83 стали призерами регионального этапа Всероссийской олимпиады школьников по математике и физике.",
-    imageUrl: "/placeholder.svg"
-  },
-  {
-    id: 2,
-    title: "День открытых дверей",
-    date: "10.03.2023",
-    description: "Приглашаем будущих учеников и их родителей на День открытых дверей, который состоится 15 марта в 10:00.",
-    imageUrl: "/placeholder.svg"
-  },
-  {
-    id: 3,
-    title: "Научно-практическая конференция",
-    date: "05.04.2023",
-    description: "В лицее пройдет ежегодная научно-практическая конференция для учащихся 8-11 классов. Регистрация открыта.",
-    imageUrl: "/placeholder.svg"
-  }
-];
+// Пустой массив новостей
+const latestNews: NewsItem[] = [];
 
 const LatestNews = () => {
   return (
@@ -37,11 +16,19 @@ const LatestNews = () => {
           </Button>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {latestNews.map(news => (
-            <NewsCard key={news.id} news={news} />
-          ))}
-        </div>
+        {latestNews.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {latestNews.map(news => (
+              <NewsCard key={news.id} news={news} />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground">
+              В настоящий момент новостей нет. Следите за обновлениями.
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
